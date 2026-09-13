@@ -53,8 +53,10 @@ echo "📍 APK output path: javagoat_app/build/app/outputs/flutter-apk/app-arm64
 echo "==============================================="
 
 
-
-
+#7
+cd /workspaces/LinkUp1/LinkUp && \
+flutter build apk --release --split-per-abi && \
+echo "🎉 LinkUp APK ready! build/app/outputs/flutter-apk/app-arm64-v8a-release.apk"
 
 
 # 1. Delete any existing flutter_icons configuration from the file
