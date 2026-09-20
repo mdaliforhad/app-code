@@ -58,6 +58,12 @@ cd /workspaces/LinkUp1/LinkUp && \
 flutter build apk --release --split-per-abi && \
 echo "🎉 LinkUp APK ready! build/app/outputs/flutter-apk/app-arm64-v8a-release.apk"
 
+#8 zip file downlode
+
+cd /workspaces/LinkUp1 && zip -r LinkUp.zip LinkUp/ && echo "✅ Done! LinkUp.zip ready"
+
+
+
 
 # 1. Delete any existing flutter_icons configuration from the file
 sed -i '/flutter_icons:/,$d' pubspec.yaml
